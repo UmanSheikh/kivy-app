@@ -1,0 +1,30 @@
+<Function>
+    check: check
+    cpu_id: cpu_id
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            id: check 
+            text: 'Rock Paper Scissors'
+            font_size: '38sp'
+            color: 0, 0.94, 0.47, 1
+        Label:
+            id: cpu_id
+            text: '-'
+            font_size: '30'
+            color: 0.94, 0, 0, 1
+        Button:
+            text: 'Rock'
+            on_press: root.rock()
+            font_size: '28'
+            background_color: 0.38, 0.35, 0.35, 1
+        Button:
+            text: 'Paper'
+            on_press: root.paper()
+            font_size: '28'
+            background_color: 0.30, 0.70, 0.54, 1
+        Button:
+            text: 'Scissors'
+            on_press: root.scissors()
+            font_size: '28'
+            background_color: 79/255, 100/255, 179/255, 1
